@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell Gov. Ferguson to Support the Wealth Tax!</title>
+    <h1> <strong> Message to Governor Ferguson </strong></h1>
+    <p> Dear Gov. Ferguson,
+</br>
+</br>
+Regarding your recent press conference discussing budget measures proposed by the state Senate and House, I urge you to approve and strengthen proposals for a WEALTH TAX. This tax is not being proposed by both chambers by accident. It is the result of years of advocacy by Washingtonians, compelling our representatives to put forward this measure in both the Senate and the House as a reflection of the will of the people. To allow a single newly elected official to block such progress is both undemocratic and dismissive of the voices of so many citizens.
+</br> 
+</br> 
+If Republicans are applauding your budget while you ran as a Democrat, perhaps it is time to reconsider your platform for the next election. If you acknowledge the regressive nature of Washington’s tax system but refuse to take meaningful action, perhaps you should reassess your commitment to your constituents. If you are concerned about the legality of these taxes but fail to leverage your legal expertise to help resolve them, then it raises serious questions about the promises you made to the public.
+</br>
+</br> 
+I urge you to collaborate with the House and Senate to strengthen, not weaken, the wealth tax and to take decisive steps to reform Washington’s regressive tax code. In this time of financial crisis, such action is more necessary than ever before.`;
+</p>
+    <script>
+        function openGovPage() {
+            // Prefilled message
+            const message = `Dear Gov. Ferguson,
+
+Regarding your recent press conference discussing budget measures proposed by the state Senate and House, I urge you to approve and strengthen proposals for a WEALTH TAX. This tax is not being proposed by both chambers by accident. It is the result of years of advocacy by Washingtonians, compelling our representatives to put forward this measure in both the Senate and the House as a reflection of the will of the people. To allow a single newly elected official to block such progress is both undemocratic and dismissive of the voices of so many citizens.
+
+If Republicans are applauding your budget while you ran as a Democrat, perhaps it is time to reconsider your platform for the next election. If you acknowledge the regressive nature of Washington’s tax system but refuse to take meaningful action, perhaps you should reassess your commitment to your constituents. If you are concerned about the legality of these taxes but fail to leverage your legal expertise to help resolve them, then it raises serious questions about the promises you made to the public.
+
+I urge you to collaborate with the House and Senate to strengthen, not weaken, the wealth tax and to take decisive steps to reform Washington’s regressive tax code. In this time of financial crisis, such action is more necessary than ever before.`;
+            
+            // Copy message to clipboard
+            navigator.clipboard.writeText(message).then(() => {
+                alert("The message has been copied to your clipboard. Please paste it into the form when the page opens or write your own message!");
+                window.open("https://governor.wa.gov/contacting-governor/contacting-governors-office/send-gov-ferguson-e-message", "_blank");
+            }).catch(err => {
+                alert("Failed to copy message. Please copy it manually.");
+                console.error("Clipboard error:", err);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Contact Governor Ferguson on https://governor.wa.gov/contacting-governor </h1>
+    <p><strong>Click the button below to open the official contact form. </strong></p>
+    <button onclick="openGovPage()">Go to Contact Form</button>
+</body>
+</html>
